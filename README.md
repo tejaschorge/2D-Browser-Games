@@ -1,0 +1,2 @@
+# 2D-Browser-Games
+This repository highlights my hands-on expertise in front-end web development through a curated collection of interactive games built using pure HTML, CSS &amp; JavaScript. Each project demonstrate not only strong command over the DOM, event handling &amp; responsive UI design, but also logical structuring, problem-solving &amp; attention to user experience.
