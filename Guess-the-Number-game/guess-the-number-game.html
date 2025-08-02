@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🎯 Guess the Number</h1>
+        
+        <div class="difficulty-selector">
+            <button class="difficulty-btn active" data-difficulty="easy">Easy (1-50)</button>
+            <button class="difficulty-btn" data-difficulty="medium">Medium (1-100)</button>
+            <button class="difficulty-btn" data-difficulty="hard">Hard (1-200)</button>
+        </div>
+
+        <div class="game-info">
+            <div class="info-item">
+                <div class="info-label">Attempts</div>
+                <div class="info-value" id="attemptsCount">0</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Best Score</div>
+                <div class="info-value" id="bestScore">-</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Games Won</div>
+                <div class="info-value" id="gamesWon">0</div>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <input type="number" id="guessInput" placeholder="Enter your guess" min="1" max="100">
+            <button class="btn btn-primary" id="guessBtn">Guess!</button>
+        </div>
+
+        <div class="message" id="message">
+            Make your first guess!
+        </div>
+
+        <button class="btn btn-success" id="newGameBtn">🎮 New Game</button>
+        <button class="btn btn-danger" id="clearHistoryBtn">🗑️ Clear History</button>
+
+        <div class="attempts-list" id="attemptsList" style="display: none;">
+            <div class="attempts-title">Your Attempts:</div>
+            <div id="attemptsContainer"></div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="creator-info">
+                    <span>👨‍💻 Created by</span>
+                    <span class="creator-name">Tejas Chorge</span>
+                </div>
+                <div class="footer-links">
+                    <span class="version-info">v1.0.0</span>
+                    <span class="footer-link">🎮 Web Game</span>
+                    <span class="footer-link">🎯 Number Guessing</span>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <div class="tech-stack">
+                    <span>Built with:</span>
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript</span>
+                </div>
+                <span>•</span>
+                <span>© 2025 • Made with ❤️ for fun gaming</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
